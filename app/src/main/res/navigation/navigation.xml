@@ -48,17 +48,20 @@
     </fragment>
     <fragment
         android:id="@+id/right2"
-        android:name="com.bakooor.androidgame.Right"
+        android:name="com.bakooor.androidgame.WinFragment"
         android:label="Right"
-        tools:layout="@layout/fragment_right">
+        tools:layout="@layout/fragment_win">
         <action
             android:id="@+id/action_right2_to_q1"
             app:destination="@id/q1"
             app:popUpTo="@id/title2" />
+        <argument
+            android:name="ch"
+            app:argType="boolean" />
     </fragment>
     <fragment
         android:id="@+id/falseFragment"
-        android:name="com.bakooor.androidgame.falseFragment"
+        android:name="com.bakooor.androidgame.FalseFragment"
         android:label="falseFragment"
         tools:layout="@layout/fragment_false">
         <action

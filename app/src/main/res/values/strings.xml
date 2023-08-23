@@ -21,4 +21,6 @@
     <string name="great">Greatttttttttttt you win !!!</string>
     <string name="greatt">Great Work,You Win !!!!!!!!!!!!!!!!!!</string>
     <string name="uuu">this game is a game that make a small quiz for you \n you need to answer all 3 questions to won \n</string>
+    <string name="share_success_text">i won!!</string>
+    <string name="share">Share</string>
 </resources>
