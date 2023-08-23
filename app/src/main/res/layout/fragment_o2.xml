@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/p22"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".o2">
+
+
+        <ImageView
+            android:id="@+id/iv2"
+            android:layout_width="153dp"
+            android:layout_height="123dp"
+            android:src="@mipmap/ic_launcher"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.07" />
+
+        <TextView
+            android:id="@+id/tvq2"
+            android:layout_width="398dp"
+            android:layout_height="53dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/Q2"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv2" />
+
+        <RadioGroup
+            android:id="@+id/rg2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@+id/b2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvq2">
+
+            <RadioButton
+                android:id="@+id/rbq21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cpp" />
+
+            <RadioButton
+                android:id="@+id/rbq22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/kotlin1" />
+
+            <RadioButton
+                android:id="@+id/rbq23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/java" />
+
+            <RadioButton
+                android:id="@+id/rbq24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/assmbley" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/b2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/submit"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvq2"
+            app:layout_constraintVertical_bias="0.573" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

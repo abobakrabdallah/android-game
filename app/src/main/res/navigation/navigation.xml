@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/title2">
+
+    <fragment
+        android:id="@+id/title2"
+        android:name="com.bakooor.androidgame.Title"
+        android:label="fragment_title"
+        tools:layout="@layout/fragment_title">
+        <action
+            android:id="@+id/action_title2_to_q1"
+            app:destination="@id/q1" />
+    </fragment>
+    <fragment
+        android:id="@+id/o2"
+        android:name="com.bakooor.androidgame.o2"
+        android:label="o2"
+        tools:layout="@layout/fragment_o2">
+        <action
+            android:id="@+id/action_o2_to_o3"
+            app:destination="@id/o3" />
+        <argument
+            android:name="check"
+            android:defaultValue="false"
+            app:argType="boolean" />
+    </fragment>
+    <fragment
+        android:id="@+id/o3"
+        android:name="com.bakooor.androidgame.o3"
+        android:label="o3"
+        tools:layout="@layout/fragment_o3">
+
+        <argument
+            android:name="check"
+            android:defaultValue="false"
+            app:argType="boolean" />
+        <action
+            android:id="@+id/action_o3_to_right2"
+            app:destination="@id/right2"
+            app:popUpTo="@id/title2" />
+        <action
+            android:id="@+id/action_o3_to_falseFragment"
+            app:destination="@id/falseFragment"
+            app:popUpTo="@id/title2" />
+    </fragment>
+    <fragment
+        android:id="@+id/right2"
+        android:name="com.bakooor.androidgame.Right"
+        android:label="Right"
+        tools:layout="@layout/fragment_right">
+        <action
+            android:id="@+id/action_right2_to_q1"
+            app:destination="@id/q1"
+            app:popUpTo="@id/title2" />
+    </fragment>
+    <fragment
+        android:id="@+id/falseFragment"
+        android:name="com.bakooor.androidgame.falseFragment"
+        android:label="falseFragment"
+        tools:layout="@layout/fragment_false">
+        <action
+            android:id="@+id/action_falseFragment_to_q1"
+            app:destination="@id/q1"
+            app:popUpTo="@id/title2" />
+    </fragment>
+    <fragment
+        android:id="@+id/q1"
+        android:name="com.bakooor.androidgame.q1"
+        android:label="question 1"
+        tools:layout="@layout/fragment_q1">
+        <action
+            android:id="@+id/action_q1_to_o2"
+            app:destination="@id/o2" />
+    </fragment>
+</navigation>

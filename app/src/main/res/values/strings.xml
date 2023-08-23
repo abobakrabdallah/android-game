@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">android game</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="letsplay">let\'s play</string>
+    <string name="letsstart">let\'s start</string>
+    <string name="play">play</string>
+    <string name="q1">Question 1</string>
+    <string name="q11">Q1 - which language we use to create ui?</string>
+    <string name="xml">xml</string>
+    <string name="kotlin1">kotlin</string>
+    <string name="java">java</string>
+    <string name="submit">submit</string>
+    <string name="Q2">Q2 - which language isn\'t use to make mobile apps?</string>
+    <string name="cpp">c++</string>
+    <string name="assmbley">assmbley</string>
+    <string name="q33">Q3 - what is the IDE we use?</string>
+    <string name="vs_code">vs code</string>
+    <string name="android_studio">android studio</string>
+    <string name="pycharam">pycharam</string>
+    <string name="great">Greatttttttttttt you win !!!</string>
+    <string name="greatt">Great Work,You Win !!!!!!!!!!!!!!!!!!</string>
+</resources>
