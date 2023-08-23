@@ -1,11 +1,11 @@
 package com.bakooor.androidgame
 
 import android.os.Bundle
+import android.view.*
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
 import androidx.navigation.Navigation
+import androidx.navigation.findNavController
+import androidx.navigation.ui.NavigationUI
 import com.bakooor.androidgame.databinding.FragmentTitleBinding
 
 
@@ -14,6 +14,7 @@ import com.bakooor.androidgame.databinding.FragmentTitleBinding
  * Use the [Title.newInstance] factory method to
  * create an instance of this fragment.
  */
+@Suppress("DEPRECATION")
 class Title : Fragment() {
 
 
@@ -26,9 +27,19 @@ class Title : Fragment() {
             Navigation.findNavController(view).navigate(R.id.action_title2_to_q1)
 
         }
+        setHasOptionsMenu(true)
 
         return binding.root
     }
 
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        super.onCreateOptionsMenu(menu, inflater)
+        inflater?.inflate(R.menu.menuabout, menu)
+    }
 
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return NavigationUI.onNavDestinationSelected(item!!,
+        view!!.findNavController()
+        ) || super.onOptionsItemSelected(item)
+    }
 }
