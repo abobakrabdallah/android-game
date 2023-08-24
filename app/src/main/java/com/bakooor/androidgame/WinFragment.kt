@@ -49,7 +49,6 @@ class WinFragment : Fragment() {
         when (item.itemId) {
             R.id.miShare -> shareSuccess()
         }
-//        return super.onOptionsItemSelected(item)
         return true
     }
 }
