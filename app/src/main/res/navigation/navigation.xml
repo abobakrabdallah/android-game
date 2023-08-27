@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/title2"
         android:name="com.bakooor.androidgame.Title"
-        android:label="fragment_title"
+        android:label="Andioid Game"
         tools:layout="@layout/fragment_title">
         <action
             android:id="@+id/action_title2_to_q1"
@@ -17,7 +17,7 @@
     <fragment
         android:id="@+id/o2"
         android:name="com.bakooor.androidgame.o2"
-        android:label="o2"
+        android:label="question 2"
         tools:layout="@layout/fragment_o2">
         <action
             android:id="@+id/action_o2_to_o3"
@@ -30,7 +30,7 @@
     <fragment
         android:id="@+id/o3"
         android:name="com.bakooor.androidgame.o3"
-        android:label="o3"
+        android:label="question 3"
         tools:layout="@layout/fragment_o3">
 
         <argument
@@ -81,5 +81,9 @@
     <fragment
         android:id="@+id/aboutFragment2"
         android:name="com.bakooor.androidgame.aboutFragment"
-        android:label="aboutFragment" />
+        android:label="About" />
+    <fragment
+        android:id="@+id/rules1"
+        android:name="com.bakooor.androidgame.Rules"
+        android:label="Rules" />
 </navigation>

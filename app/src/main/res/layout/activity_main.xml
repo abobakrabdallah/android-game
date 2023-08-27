@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
 
-    <LinearLayout
+    <androidx.drawerlayout.widget.DrawerLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/ll"
-        android:orientation="vertical">
+        android:id="@+id/ll">
         
         <androidx.fragment.app.FragmentContainerView
             android:id="@+id/nav_host_fragment"
@@ -20,6 +20,13 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:defaultNavHost="true"
             app:navGraph="@navigation/navigation" />
-        
-    </LinearLayout>
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/navView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:menu="@menu/drawer1"
+            app:headerLayout="@layout/fragment_drawer"/>
+    </androidx.drawerlayout.widget.DrawerLayout>
 </layout>

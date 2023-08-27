@@ -37,6 +37,7 @@ class Title : Fragment() {
         inflater?.inflate(R.menu.menuabout, menu)
     }
 
+
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return NavigationUI.onNavDestinationSelected(item!!,
         view!!.findNavController()
